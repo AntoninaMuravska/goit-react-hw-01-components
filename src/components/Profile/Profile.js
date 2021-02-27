@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import s from './Profile.module.css';
 
 const Profile = ({ name, tag, location, avatar, stats }) => {
-  console.log(name, tag, location, avatar, stats);
+  // console.log(name, tag, location, avatar, stats);
   const { followers, views, likes } = stats;
   return (
-    <>
+
       <div className={s.profile}>
         <div className={s.description}>
           <img src={avatar} alt={name} className={s.avatar} />
@@ -30,7 +30,7 @@ const Profile = ({ name, tag, location, avatar, stats }) => {
           </li>
         </ul>
       </div>
-    </>
+  
   );
 };
 
