@@ -14,7 +14,7 @@ const Statistics = ({ title, stats }) => {
           return (
             <li className={styles.item} key={id}>
               <span className={styles.label}>{label}</span>
-              <span className={styles.percentage}>{percentage}</span>
+              <span className={styles.percentage}>{percentage}%</span>
             </li>
           );
         })}
@@ -39,3 +39,9 @@ Statistics.propTypes = {
     }),
   ),
 };
+
+// function generateColor() {
+//   return '#' + Math.floor(Math.random()*16777215).toString(16)
+// };
+
+//  const color = generateColor();

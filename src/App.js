@@ -8,7 +8,7 @@ import users from './components/db/user.json';
 import statisticsData from './components/db/statistical-data.json';
 import friends from './components/db/friends.json';
 import transaction from './components/db/transactions.json';
-console.log(transaction);
+// console.log(transaction);
 
 const { name, tag, location, avatar, stats } = users;
 
