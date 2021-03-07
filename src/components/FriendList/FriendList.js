@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './FriendList.module.css';
-import FriendListItem from './FriendListItem';
+import FriendListItem from '../FriendListItem/FriendListItem';
 import PropTypes from 'prop-types';
+import styles from './FriendList.module.css';
 
 const FriendList = ({ friends }) => {
   return (
@@ -23,10 +23,12 @@ const FriendList = ({ friends }) => {
 export default FriendList;
 
 FriendList.propTypes = {
-  friends: PropTypes.arrayOf(PropTypes.shape({
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool.isRequired,
-    id: PropTypes.number.isRequired,
-  }))
-}
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
+    }),
+  ),
+};

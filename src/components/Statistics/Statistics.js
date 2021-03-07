@@ -1,9 +1,9 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './Statistics.module.css';
-import PropTypes from 'prop-types';
 
 const Statistics = ({ title, stats }) => {
-//   console.log(stats);
+  //   console.log(stats);
   return (
     <section className={styles.statisticsData}>
       {title && <h2 className={styles.title}>Upload stats</h2>}

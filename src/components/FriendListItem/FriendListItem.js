@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './FriendList.module.css';
+import styles from './FriendlistItem.module.css';
 
-const FriendlistItem = ({ avatar, name, isOnline, id }) => {
+const FriendListItem = ({ avatar, name, isOnline, id }) => {
   return (
-    <li key={id} className={styles.item}>
+    <li className={styles.item}>
       <span className={isOnline ? styles.online : styles.offline}></span>
       <img className={styles.avatar} src={avatar} alt={name} width="48" />
       <p className={styles.name}>{name}</p>
@@ -11,4 +11,4 @@ const FriendlistItem = ({ avatar, name, isOnline, id }) => {
   );
 };
 
-export default FriendlistItem;
+export default FriendListItem;
