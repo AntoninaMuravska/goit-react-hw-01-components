@@ -1,8 +1,8 @@
+import Container from './components/Container';
 import Profile from './components/Profile';
 import FriendList from './components/FriendList';
 import Statistics from './components/Statistics';
 import TransactionHistory from './components/TransactionHistory';
-import './App.css';
 
 import user from './db/user.json';
 import friends from './db/friends.json';
@@ -13,7 +13,7 @@ const { name, tag, location, avatar, stats } = user;
 
 function App() {
   return (
-    <div className="App">
+    <Container>
       <Profile
         name={name}
         tag={tag}
@@ -24,7 +24,7 @@ function App() {
       <FriendList friends={friends} />
       <Statistics title="statistics" stats={statistics} />
       <TransactionHistory items={transactions} />
-    </div>
+    </Container>
   );
 }
 
